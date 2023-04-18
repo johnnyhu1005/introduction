@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/frameLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F1EFDC"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/photo"
+            app:civ_border_color="#474747"
+            app:civ_border_width="3dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10sp"
+            android:text="Johnny Hu\n胡肇宇"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="系級：資工二A \n學號：411017705 \n科目：行動應用軟體開發"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/interest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#799DBA"
+                android:text="興趣"
+                android:textSize="40sp"
+                app:icon="@drawable/smile" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#799DBA"
+                android:text="專長"
+                android:textSize="40sp"
+                app:icon="@drawable/emoji_light" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
